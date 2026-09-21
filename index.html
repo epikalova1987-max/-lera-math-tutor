@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171528">
+  <meta name="description" content="Персональный репетитор по математике: дроби и проценты, короткие уроки и мягкие подсказки.">
+  <title>Мой ИИ‑репетитор по математике</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%237c5cff'/%3E%3Cpath d='M8 23V9h4v10h12v4H8zm8-14h8v4h-8z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Основная навигация">
+        <div class="brand"><span class="brand-mark">π</span><span>Мой репетитор</span></div>
+      <nav id="main-nav">
+        <button class="nav-item active" data-view="home"><span>⌂</span>Главная</button>
+        <button class="nav-item" data-view="lesson"><span>◇</span>Урок дня</button>
+        <button class="nav-item" data-view="practice"><span>✦</span>Практика</button>
+        <button class="nav-item" data-view="chat"><span>◌</span>Спросить</button>
+        <button class="nav-item" data-view="progress"><span>▥</span>Прогресс</button>
+        <button class="nav-item parent-link" data-view="parent"><span>♙</span>Для родителя</button>
+      </nav>
+      <div class="sidebar-footer"><span class="tiny-label">Серия занятий</span><strong>3 дня подряд</strong></div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobile-menu" aria-label="Открыть меню">☰</button>
+        <div><span class="eyebrow">Математика · 6 класс</span><h1 id="page-title">Привет!</h1></div>
+        <div class="level-chip"><span>✦</span><strong id="xp-count">120</strong> XP</div>
+      </header>
+
+      <section class="view active" id="view-home">
+        <div class="home-grid">
+          <article class="mission-card">
+            <div class="mission-copy">
+              <span class="pill">МИССИЯ НА СЕГОДНЯ · 15 МИН</span>
+              <h2>Дроби: строим парк</h2>
+              <p>Разберём, как складывать дроби с разными знаменателями — спокойно и по шагам.</p>
+              <button class="primary-btn" data-start-lesson>Начать занятие <span>→</span></button>
+            </div>
+            <div class="fraction-visual" aria-label="Три четверти круга">
+              <div class="fraction-orbit"><span>¾</span></div>
+              <div class="cube cube-a"></div><div class="cube cube-b"></div><div class="cube cube-c"></div>
+            </div>
+          </article>
+
+          <article class="focus-card">
+            <div class="card-head"><div><span class="eyebrow">ТЕКУЩАЯ ЦЕЛЬ</span><h3>Дроби и проценты</h3></div><strong>42%</strong></div>
+            <div class="progress-track"><span style="width:42%"></span></div>
+            <div class="skill-row"><span class="status done">✓</span><div><strong>Что такое дробь</strong><small>Освоено</small></div></div>
+            <div class="skill-row"><span class="status current">2</span><div><strong>Общий знаменатель</strong><small>Тренируем сейчас</small></div></div>
+            <div class="skill-row"><span class="status locked">3</span><div><strong>Процент от числа</strong><small>Следующая тема</small></div></div>
+          </article>
+        </div>
+
+        <div class="section-heading"><div><span class="eyebrow">ТВОЙ МАРШРУТ</span><h2>Карта знаний</h2></div><button class="text-btn" data-view-button="progress">Весь прогресс →</button></div>
+        <div class="topic-grid">
+          <article class="topic-card purple"><span class="topic-icon">½</span><div><h3>Дроби</h3><p>5 из 8 навыков</p></div><strong>63%</strong></article>
+          <article class="topic-card blue"><span class="topic-icon">%</span><div><h3>Проценты</h3><p>2 из 7 навыков</p></div><strong>29%</strong></article>
+          <article class="topic-card amber"><span class="topic-icon">↻</span><div><h3>Повторить</h3><p>3 задания ждут</p></div><strong>→</strong></article>
+        </div>
+      </section>
+
+      <section class="view" id="view-lesson"></section>
+      <section class="view" id="view-practice"></section>
+      <section class="view" id="view-chat"></section>
+      <section class="view" id="view-progress"></section>
+      <section class="view" id="view-parent"></section>
+    </main>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js"></script>
+</body>
+</html>
